@@ -1,0 +1,6 @@
+original_questions = {
+    'What is git': ['Foolish or boorish person', "A way to get and publish software packages","A common unix command used to visualize code","A source control tool"],
+    'What is a public repository?': ['A repository that has been made publicly viewable, meaning it can be forked and viewed by anyone, but maintainers control the commits.','One in which developers by default have full edit privileges.','A repository globally accessible within the organization.','An open source repository.'],
+    'What is git stash?': ['Git stash command bundles the unpushed local changes to the working branch and stores them in a local stash folder so that you can perform other git operations against commits.','A helpful collection of shortcuts to navigate git.','Shorthand for a foundation created to fund the git project.','Hidden Easter Eggs in the git code.','How you get rid of commits you don’t want.'],
+    'How do you view an index of all your stashes?': ['git stash list','git show –v ','ls .git/refs/stash','git stash pop','git stash apply','git stash show']
+}

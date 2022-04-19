@@ -1,0 +1,15 @@
+<h1>SRE-U Self Assessment</h1>
+<form action='/quiz' method='POST'>
+    <ol>
+        {% for i in q %}
+            <li>{{i}}</li>
+            {% for j in o[i] %}
+                <input type='radio' value='{{j}}' name='{{i}}' />{{j}}
+                <br>
+            {% endfor %}
+            <br>
+            <input type="submit" value="Submit" />
+        {% endfor %}
+    </ol>
+    <!--<input type="submit" value="Submit" />-->
+</form>
