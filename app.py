@@ -1,41 +1,30 @@
-from flask import Flask, render_template, request
-import random, copy
-import questions
+
+   
+from flask import Flask, render_template, redirect, url_for
+from questions import PopQuiz
+
+
+#SECRET_KEY = 'this is a secret key'
+
 app = Flask(__name__)
+app.config.from_object(__name__)
 
-copy_questions = copy.deepcopy(questions.original_questions)
 
-def shuffle(q):
- """
- This function is for shuffling 
- the dictionary elements.
- """
- selected_keys = []
- i = 0
- while i < len(q):
-  current_selection = random.choice(list(q.keys()))
-  #current_selection = list(q.keys())
-  if current_selection not in selected_keys:
-   selected_keys.append(current_selection)
-   i = i+1
- return selected_keys
+@app.route('/', methods=['GET', 'POST'])
+def wtf_quiz():
+    form = PopQuiz()
+    if form.validate_on_submit():
+        return redirect(url_for('quiz_solution'))
+        #return redirect(url_for('quiz_solutions'))
+    #return render_template('quiz.html', form=form)
+    return render_template('main.html',form=form)
 
-questions_shuffled = shuffle(copy_questions)
 
-@app.route('/')
-def quiz():
- #questions_shuffled = shuffle(copy_questions)
- for i in copy_questions.keys():
-  random.shuffle(copy_questions[i])
- return render_template('main.html', q = questions_shuffled, o = copy_questions)
-
-@app.route('/solution', methods=['POST'])
-def quiz_answers():
-  # for i in copy_questions.keys():
-  #   answered = request.form[i]
-  #   if questions.original_questions[i][0] == answered:
-  return render_template('quiz_solutions.html',q = questions_shuffled, o = copy_questions)
+@app.route('/quiz_solutions')
+def quiz_solution():
+    #return render_template('passed.html')
+    return render_template('quiz_solutions.html')
 
 
 if __name__ == '__main__':
- app.run(debug=True)
+    app.run(debug=True)

@@ -1,23 +1,40 @@
-<h1>SRE-U Self Assessment</h1>
-<!--<form action='/solution' method='POST'>-->
-<form action='/' method='POST'>
-    <ol>
-        {% for i in q %}
-            <li>{{i}}</li>
-            {% for j in o[i] %}
-                <input type='radio' value='{{j}}' name='{{i}}' />{{j}}
-                <br>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask - WTF - Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <style type="text/css">
+    .container {
+      max-width: 500px;
+    }
+  </style>
+  <body>
+    <br>
+    <div class="container">
+
+      <form action="/" method="POST" role="form">
+        <ol>
+            {% for question in form %}
+                <div class="question">
+                   <li>
+                        {{ question.label }}
+                   </li> 
+                   {{ question }}
+                </div>
                 <!--
-                {% if j== o[i][0] %}
-                Correct answer
-                {% else %}
-                Incorrect answer
-                {% endif %}-->
-            {% endfor %}
-            <br>
-        {% endfor %}
-        <br>
-        <input type="submit" value="Submit" />
-    </ol>
-    <!--<input type="submit" value="Submit" />-->
-</form>
+                <div class = "answer">
+                    {{ question }}
+                </div>-->
+            {% endfor %}     
+            <br>     
+            <input type="submit" value = "Submit" />
+        </ol>
+      </form>
+
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
