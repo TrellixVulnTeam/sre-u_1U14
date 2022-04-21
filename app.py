@@ -31,10 +31,12 @@ def quiz():
 
 @app.route('/solution', methods=['POST'])
 def quiz_answers():
-  # for i in copy_questions.keys():
-  #   answered = request.form[i]
-  #   if questions.original_questions[i][0] == answered:
-  return render_template('quiz_solutions.html',q = questions_shuffled, o = copy_questions)
+  for i in copy_questions.keys():
+    answered = request.form[i]
+    print(answered)
+    if questions.original_questions[i][0] == answered:
+      return render_template('quiz_solutions.html',q = questions_shuffled, o = copy_questions)
+    break
 
 
 if __name__ == '__main__':
