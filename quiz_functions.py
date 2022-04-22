@@ -21,17 +21,22 @@ def generate_questions():
                 option4 = st.checkbox(inner_value)
             elif inner_key == 'option5':
                 option5 = st.checkbox(inner_value)
+            elif inner_key == 'option6':
+                option5 = st.checkbox(inner_value)
         #break
         question_count += 1
 
 def display_solution():
     q_and_a_count = 1
+    st.title("Solution")
     for key,value in question_list.items():
         string_number = str(q_and_a_count)
         string_question = f"q"+string_number
         for inner_key, inner_value in value.items():
             if key == string_question and inner_key == "answer":
                 st.write(f'{string_number}. Correct answer: {inner_value}')
+            elif key == string_question and string_question == "q3" and inner_key =="Reason":
+                st.write(f'Reason: {inner_value}')
             # elif key == "q2" and inner_key == "answer":
             #     st.write(f'{string_number}. Correct answer: {inner_value}')
             # elif key == "q3" and (:
