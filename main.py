@@ -11,5 +11,4 @@ quiz_functions.generate_questions()
 submit_button = st.button("Submit")
 
 if submit_button:
-  # display_solution
   quiz_functions.display_solution()

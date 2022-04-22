@@ -6,7 +6,6 @@ question_list = questions.questions_dic
 def generate_questions():
     question_count = 1
     for key,value in question_list.items():
-        #question_count = 1
         string_number = str(question_count)
         for inner_key, inner_value in value.items():
             if inner_key == 'question':
@@ -23,7 +22,6 @@ def generate_questions():
                 option5 = st.checkbox(inner_value)
             elif inner_key == 'option6':
                 option5 = st.checkbox(inner_value)
-        #break
         question_count += 1
 
 def display_solution():
@@ -37,8 +35,4 @@ def display_solution():
                 st.write(f'{string_number}. Correct answer: {inner_value}')
             elif key == string_question and string_question == "q3" and inner_key =="Reason":
                 st.write(f'Reason: {inner_value}')
-            # elif key == "q2" and inner_key == "answer":
-            #     st.write(f'{string_number}. Correct answer: {inner_value}')
-            # elif key == "q3" and (:
-            #     st.write(f'{string_number}. Correct answer: {inner_value}')
         q_and_a_count += 1
