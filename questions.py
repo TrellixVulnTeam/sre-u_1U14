@@ -16,21 +16,12 @@ questions_dic = {
         'option4': 'An open source repository.',
         'answer': 'A repository that has been made publicly viewable, meaning it can be forked and viewed by anyone, but maintainers control the commits.'
     },
+    'q3': {
+        'question':'How can main branches be used?',
+        'option1': 'As the location for every commit to the repository of code by developers.',
+        'option2': 'As the branch where only stable tested code is committed and released from.',
+        'option3': 'To be used a honeypot to misdirect bad actors and bots.',
+        'option4': 'The default first branch for any repository, but it can be removed or renamed per developer preferences. ',
+        'answer' : 'As the location for every commit to the repository of code by developers.\nTo be used a honeypot to misdirect bad actors and bots.\n\nThe default first branch for any repository, but it can be removed or renamed per developer preferences. '
+    },
 }
-
-# for key,value in questions_dic.items():
-#     for inner_key, inner_value in value.items():
-#         if inner_key == 'question':
-#             #question_output = st.write(inner_value)
-#             pass
-#         elif inner_key == 'option1':
-#             st.checkbox(inner_value)
-#         elif inner_key == 'option2':
-#             st.checkbox(inner_value)
-#         elif inner_key == 'option3':
-#             st.checkbox(inner_value)
-#         elif inner_key == 'option4':
-#             st.checkbox(inner_value)
-#         elif inner_key == 'option5':
-#             st.checkbox(inner_value)
-#     break
