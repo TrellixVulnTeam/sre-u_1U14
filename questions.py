@@ -34,28 +34,3 @@ questions_dic = {
 #         elif inner_key == 'option5':
 #             st.checkbox(inner_value)
 #     break
-
-
-# q1 = st.write("What is git?")
-# response1 = 'Foolish or boorish person.'
-# response2 = 'A way to get and publish software packages '
-# response3 = 'A common unix command used to visualize code.'
-# response4 = 'A source control tool.'
-
-# option1 = st.checkbox(response1)
-# option2 = st.checkbox(response2)
-# option3 = st.checkbox(response3)
-# option4 = st.checkbox(response4)
-
-"""
-{
-  question#:{
-    options: [option1,option2,option3]
-    answer: 
-    },
-  question#:{
-    options: [option1,option2,option3]
-    answer: 
-    },
-}
-"""
