@@ -32,7 +32,8 @@ def display_solution():
         string_question = f"q"+string_number
         for inner_key, inner_value in value.items():
             if key == string_question and inner_key == "answer":
-                st.write(f'{string_number}. Correct answer: {inner_value}')
+                #st.write(f'{string_number}. Correct answer: {inner_value}')
+                st.text(f'{string_number}. Correct answer: {inner_value}')
             elif key == string_question and string_question == "q3" and inner_key =="Reason":
-                st.write(f'Reason: {inner_value}')
+                st.text(f'Reason: {inner_value}')
         q_and_a_count += 1
