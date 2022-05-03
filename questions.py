@@ -6,7 +6,7 @@ questions_dic = {
         'option2': 'A way to get and publish software packages ',
         'option3': 'A common unix command used to visualize code.',
         'option4': 'A source control tool.',
-        'answer': 'Foolish or boorish person.'
+        'answer': 'A source control tool.'
     },
     'q2': {
         'question':'What is a public repository?',
@@ -117,8 +117,7 @@ questions_dic = {
         'option1': 'Checkout a new repo from the desired location.',
         'option2': 'Change the HEAD of the local repository',
         'option3': 'Add the upstream reference locally and change your working tree’s fetch or push defaults.',
-        'option4': '',
-        'answer' : ''
+        'answer' : 'Add the upstream reference locally and change your working tree’s fetch or push defaults.'
     },
     'q15': {
         'question':'What’s the difference between a fork and a branch?',
