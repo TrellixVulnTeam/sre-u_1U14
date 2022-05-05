@@ -22,7 +22,7 @@ questions_dic = {
         'option2': 'As the branch where only stable tested code is committed and released from.',
         'option3': 'To be used a honeypot to misdirect bad actors and bots.',
         'option4': 'The default first branch for any repository, but it can be removed or renamed per developer preferences. ',
-        'answer' : 'As the location for every commit to the repository of code by developers.\nTo be used a honeypot to misdirect bad actors and bots.\n\nThe default first branch for any repository, but it can be removed or renamed per developer preferences. ',
+        'answer' : 'As the location for every commit to the repository of code by developers.\n\nTo be used a honeypot to misdirect bad actors and bots.\n\nThe default first branch for any repository, but it can be removed or renamed per developer preferences. ',
         'Reason' : ' There’s no programmatic reason to have a branch named main, it’s just a default–you can change this default and rename it at any time. The usage of it can be customized to any workflow a developer or organization desires. The correct answers here outline the most common usage patterns.'
     },
     'q4': {
@@ -33,7 +33,7 @@ questions_dic = {
         'option4': 'By setting default behavior for merge conflicts. ',
         'option5': 'By creating a Pull Request and giving it to a senior resource to review.',
         'option6': 'Revert changes, rebase, and merge again.',
-        'answer' : 'Visually review the diffs and select which is correct via an IDE or GUI or command line interactive prompt.\nBy creating a Pull Request and giving it to a senior resource to review.\n\nRevert changes, rebase, and merge again.'
+        'answer' : 'Visually review the diffs and select which is correct via an IDE or GUI or command line interactive prompt.\n\nBy creating a Pull Request and giving it to a senior resource to review.\n\nRevert changes, rebase, and merge again.'
     },
     'q5': {
         'question':'What is git stash?',
@@ -133,7 +133,7 @@ questions_dic = {
         'option2': 'To remove any history that might show secrets or keys or authentication tokens.',
         'option3': 'To hide bugs.',
         'option4': 'To annoy your coworkers.',
-        'answer' : 'To suppress local commits related to debugging on local branches for a cleaner commit history to the upstream repository.\nTo remove any history that might show secrets or keys or authentication tokens.'
+        'answer' : 'To suppress local commits related to debugging on local branches for a cleaner commit history to the upstream repository.\n\nTo remove any history that might show secrets or keys or authentication tokens.'
     },
     'q17': {
         'question':'What is the .gitignore file for?',

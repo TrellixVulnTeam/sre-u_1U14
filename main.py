@@ -4,6 +4,8 @@ import pandas as pd
 import questions
 import quiz_functions
 
+
+#def main():
 st.title("Red Hat SRE-U Self Assessment")
 
 quiz_functions.generate_questions()
@@ -22,3 +24,6 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
+
+  # if __name__ == '__main__':
+  #   main()
